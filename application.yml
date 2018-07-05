@@ -1,0 +1,19 @@
+# ===================================================================
+# JHipster Sample Spring Cloud Config.
+# ===================================================================
+
+# Property used on app startup to check the config server status
+configserver:
+    name: emcloud config server
+    status: Welcome Connected to the EmCloud Config Server(master)!
+    
+jhipster:
+    security:
+        authentication:
+            jwt:
+                secret: my-secret-token-to-change-in-production
+
+# Enable /management/logfile endpoint for all apps
+logging:
+    path: /tmp
+    file: ${spring.application.name}.log
